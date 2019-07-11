@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ejemplo de cómo trabajar con pesos (layout_weight).
+     Observad que si trabajamos en vertical el atributo layout_height debe ser 0dp,
+     si lo hacemos en horizontal el atributo que debe ser 0dp es layout_width.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="@string/uno"
+        android:textColor="@android:color/white"
+        android:background="#B30000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:text="@string/dos"
+        android:textColor="@android:color/white"
+        android:background="#036200"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="@string/tres"
+        android:textColor="@android:color/white"
+        android:background="#0362E0"/>
+
+</LinearLayout>
